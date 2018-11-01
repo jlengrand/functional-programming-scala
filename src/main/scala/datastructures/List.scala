@@ -128,7 +128,7 @@ object List { // `List` companion object. Contains functions for creating and wo
       (h, acc) => if(f(h)) Cons(h, acc) else acc
     )
   }
-§
+
   def flatMap[A, B](l : List[A])(f : A => List[B]) : List[B] = {
     flatten(map(l)(f))
   }
